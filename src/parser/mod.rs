@@ -1174,7 +1174,7 @@ impl ParseMode for FirstMode {
 #[cfg(feature = "partial")]
 pub(crate) const TRY_PARTIAL: PartialMode = PartialMode { first: false };
 #[cfg(not(feature = "partial"))]
-pub(crate) const TRY_PARTIAL: FirstMode = FirstMode;
+pub const TRY_PARTIAL: FirstMode = FirstMode;
 
 /// Internal API. May break without a semver bump
 #[doc(hidden)]
